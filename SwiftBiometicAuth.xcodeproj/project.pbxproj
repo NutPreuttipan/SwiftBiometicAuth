@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		7809F240228145DA0032A068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809F23F228145DA0032A068 /* AppDelegate.swift */; };
 		7809F242228145DA0032A068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809F241228145DA0032A068 /* ViewController.swift */; };
-		7809F245228145DA0032A068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7809F243228145DA0032A068 /* Main.storyboard */; };
 		7809F247228145DC0032A068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7809F246228145DC0032A068 /* Assets.xcassets */; };
 		7809F24A228145DC0032A068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7809F248228145DC0032A068 /* LaunchScreen.storyboard */; };
+		7809F253228147670032A068 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7809F252228147670032A068 /* LocalAuthentication.framework */; };
+		7809F255228149F30032A068 /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7809F254228149F30032A068 /* SecretViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7809F23C228145DA0032A068 /* SwiftBiometicAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBiometicAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7809F23F228145DA0032A068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7809F241228145DA0032A068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7809F244228145DA0032A068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7809F246228145DC0032A068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7809F249228145DC0032A068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7809F24B228145DC0032A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7809F252228147670032A068 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		7809F254228149F30032A068 /* SecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7809F253228147670032A068 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				7809F23E228145DA0032A068 /* SwiftBiometicAuth */,
 				7809F23D228145DA0032A068 /* Products */,
+				7809F251228147670032A068 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +59,21 @@
 			isa = PBXGroup;
 			children = (
 				7809F23F228145DA0032A068 /* AppDelegate.swift */,
+				7809F254228149F30032A068 /* SecretViewController.swift */,
 				7809F241228145DA0032A068 /* ViewController.swift */,
-				7809F243228145DA0032A068 /* Main.storyboard */,
 				7809F246228145DC0032A068 /* Assets.xcassets */,
 				7809F248228145DC0032A068 /* LaunchScreen.storyboard */,
 				7809F24B228145DC0032A068 /* Info.plist */,
 			);
 			path = SwiftBiometicAuth;
+			sourceTree = "<group>";
+		};
+		7809F251228147670032A068 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7809F252228147670032A068 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +136,6 @@
 			files = (
 				7809F24A228145DC0032A068 /* LaunchScreen.storyboard in Resources */,
 				7809F247228145DC0032A068 /* Assets.xcassets in Resources */,
-				7809F245228145DA0032A068 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +148,13 @@
 			files = (
 				7809F242228145DA0032A068 /* ViewController.swift in Sources */,
 				7809F240228145DA0032A068 /* AppDelegate.swift in Sources */,
+				7809F255228149F30032A068 /* SecretViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7809F243228145DA0032A068 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7809F244228145DA0032A068 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7809F248228145DC0032A068 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83SD72X346;
 				INFOPLIST_FILE = SwiftBiometicAuth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83SD72X346;
 				INFOPLIST_FILE = SwiftBiometicAuth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
